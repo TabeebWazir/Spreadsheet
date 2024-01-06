@@ -7,3 +7,5 @@ window.onload = () => {
     container.appendChild(label);
   };
 };
+
+const range = (start, end) => Array();
