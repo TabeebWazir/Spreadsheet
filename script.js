@@ -1,3 +1,5 @@
+const isEven = (num) => (num % 2 === 0 ? true : false);
+
 const sum = (nums) => nums.reduce((acc, el) => acc + el, 0);
 
 const range = (start, end) =>
