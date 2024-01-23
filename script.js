@@ -1,5 +1,5 @@
 const isEven = (num) => (num % 2 === 0 ? true : false);
-
+//Hello World
 const sum = (nums) => nums.reduce((acc, el) => acc + el, 0);
 
 const average = (nums) => sum(nums) / nums.length;
@@ -38,7 +38,7 @@ const evalFormula = (x, cells) => {
     charRange(character1, character2).map(elemValue(num));
   const rangeExpanded = x.replace(
     rangeRegex,
-    (match, char1, num1, char2, num2) => rangeFromString(num1, num2)
+    (match, char1, num1, char2, num2) => rangeFromString(num1, num2).map()
   );
 };
 
