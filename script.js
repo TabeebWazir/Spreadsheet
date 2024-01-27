@@ -79,6 +79,9 @@ const evalFormula = (x, cells) => {
     idToText(match.toUpperCase())
   );
   const functionExpanded = applyFunction(cellExpanded);
+  return functionExpanded === x
+    ? functionExpanded
+    : evalFormula(functionExpanded, cells);
 };
 
 window.onload = () => {
