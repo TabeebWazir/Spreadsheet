@@ -46,6 +46,7 @@ const spreadsheetFunctions = {
     Math.floor(Math.random() * (nums[1] - nums[0] + 1)) + nums[0],
   range: (nums) => range(...nums),
   nodupes: (nums) => [...new Set(nums)],
+  "": (nums) => nums,
 };
 
 const applyFunction = (str) => {
