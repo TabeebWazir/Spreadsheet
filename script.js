@@ -44,6 +44,7 @@ const spreadsheetFunctions = {
   everyeven: (nums) => nums.every(isEven),
   random: (nums) =>
     Math.floor(Math.random() * (nums[1] - nums[0] + 1)) + nums[0],
+  range: (nums) => range(...nums),
 };
 
 const applyFunction = (str) => {
