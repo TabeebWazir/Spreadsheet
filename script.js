@@ -42,6 +42,8 @@ const spreadsheetFunctions = {
   increment: (nums) => nums.map((num) => (num += 1)),
   someeven: (nums) => nums.some((num) => num % 2 === 0),
   everyeven: (nums) => nums.every(isEven),
+  random: (nums) =>
+    Math.floor(Math.random() * (nums[1] - nums[0] + 1)) + nums[0],
 };
 
 const applyFunction = (str) => {
@@ -126,3 +128,5 @@ const update = (event) => {
     );
   }
 };
+
+console.log(Math.floor(Math.random() * (10 - 5 + 1)) + 5);
